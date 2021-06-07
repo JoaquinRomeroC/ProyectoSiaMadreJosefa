@@ -1,21 +1,25 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
-from Aplicacion1.models import Operadores
-
+from Aplicacion1.models import *
+from django.views.generic import ListView
 
 def ejemplo(request):
     return HttpResponse("Hola Mundo")
 
 def ejemplo2(request):
-    return  render(request,'Home.html')
+    return  render(request,'.html')
 
-def inicioSesion(request):
-    return render(request, 'Inicio Sesion.html')
+def Home(request):
+    return render(request, 'Home.html')
+
+def Login(request):
+    return render(request, 'Login.html')
 
 def listadoOperadores(request):
-    operadores: {'listadoOperadores': Operadores.objects.all ()}
-    return render(request, 'Operadores.html', datos)
+    operadores = {'listaPersonas': Operadores.objects.all}
+    return render(request, 'ListaOperadores.html', datosOperadores)
+
 
 
 

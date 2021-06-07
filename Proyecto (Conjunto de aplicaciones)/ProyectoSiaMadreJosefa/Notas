@@ -35,3 +35,8 @@ HTML
 EJEMPLO
 def ejemplo2(request):
     return  render(request,'nombreDelArchivoTemplate')
+
+Crear inicio de secion
+
+.Ir a la url de la url del proyecto
+.nuevo vinculo: path('accounts/', include('django.contrib.auth.url'))

@@ -16,11 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from Aplicacion1.views import ejemplo, listadoOperadores
+from Aplicacion1.views import ejemplo, listadoOperadores, Login
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('Aplicacion1.urls')),
-    path('operadores/', listadoOperadores, name='lista de operadores'),
+
 ]
 

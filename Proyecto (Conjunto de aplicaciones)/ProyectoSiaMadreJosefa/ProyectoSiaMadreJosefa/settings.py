@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'ProyectoSiaMadreJosefa.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'FundacionMJ',
+        'NAME': 'BaseDatosF',
         'HOST': 'localhost',
         'USER': 'postgres',
         'PASSWORD': 'Dinamita123',
